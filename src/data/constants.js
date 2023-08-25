@@ -69,7 +69,7 @@ export const skills = [
       },
       {
         name: 'Express Js',
-        image: '',
+        image: 'https://w7.pngwing.com/pngs/925/447/png-transparent-express-js-node-js-javascript-mongodb-node-js-text-trademark-logo.png',
       },
       {
         name: 'Postgresql',
