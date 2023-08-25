@@ -1,7 +1,7 @@
 import styled, { ThemeProvider } from 'styled-components';
 import { BrowserRouter } from 'react-router-dom';
 
-import HeroSection from './components/HeroSection/HeroSection';
+import Header from './components/Header/Header';
 import NavBar from './components/NavBar/NavBar';
 import Skills from './components/Skills/Skills';
 
@@ -28,7 +28,7 @@ function App() {
       <BrowserRouter>
         <Body>
           <NavBar />
-          <HeroSection />
+          <Header />
           <Wrapper>
             <Skills />
           </Wrapper>

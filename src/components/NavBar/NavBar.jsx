@@ -2,8 +2,7 @@ import { useState } from 'react';
 import { Link as LinkR } from 'react-router-dom';
 import styled from 'styled-components';
 import MenuIcon from '@mui/icons-material/Menu';
-import { IconButton, Drawer, List } from '@mui/material';
-import { withTheme } from 'styled-components';
+import { IconButton, Drawer } from '@mui/material';
 
 const Nav = styled.div`
   background-color: ${({ theme }) => theme.card_light};
@@ -172,16 +171,7 @@ const NavBar = () => {
           <MenuIcon fontSize="large" sx={{ color: 'white' }} />
         </MobileIcon>
 
-        <MobileDrawer
-          PaperProps={({ theme }) => ({
-            sx: {
-              width: '200px',
-            },
-          })}
-          anchor="right"
-          open={open}
-          onClose={() => setOpen(false)}
-        >
+        <MobileDrawer anchor="right" open={open} onClose={() => setOpen(false)}>
           <NavLink href="#about">About</NavLink>
           <NavLink href="#skills">Skills</NavLink>
           <NavLink href="#projects">Projects</NavLink>
