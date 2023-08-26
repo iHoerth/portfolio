@@ -32,7 +32,7 @@ const NavContainer = styled.div`
 `;
 
 const NavLogo = styled(LinkR)`
-  color: ${({ theme }) => theme.text_light};
+  color: ${({ theme }) => theme.text_primary};
   width: 80%;
   padding: 0 6px;
   display: flex;
@@ -41,9 +41,6 @@ const NavLogo = styled(LinkR)`
   text-decoration: none;
   align-items: center;
 
-  &:visited {
-    color: ${({ theme }) => theme.text_primary};
-  }
 
   @media screen and (max-width: 640px) {
     padding: 0px;
@@ -136,7 +133,8 @@ const Span = styled.div`
   font-weight: bold;
   font-size: 18px;
   text-decoration: none;
-  color: ${({ theme }) => theme.text_light};
+  color: ${({ theme }) => theme.text_primary};
+  
 `;
 
 const MobileDrawer = styled(Drawer)(({ theme }) => ({
