@@ -1,7 +1,7 @@
-import styled from 'styled-components';
-import { Bio } from '../../data/constants';
-import TypewriterComponent from 'typewriter-effect';
-import profilePicture from '../../image/profile.png'
+import styled from "styled-components";
+import { Bio } from "../../data/constants";
+import TypewriterComponent from "typewriter-effect";
+import profilePicture from "../../image/profile.png";
 
 const HeaderContainer = styled.div`
   background-color: ${({ theme }) => theme.card_light};
@@ -10,11 +10,11 @@ const HeaderContainer = styled.div`
   position: relative;
   padding: 80px 30px;
 
-  @media screen and (max-width 960px) {
-    padding: 66px 16px;
+  @media screen and (max-width: 960px) {
+    padding: 45px 16px;
   }
 
-  @media screen and (max-width 640px) {
+  @media screen and (max-width: 640px) {
     padding: 32px 16px;
   }
 
@@ -71,14 +71,14 @@ const RightSection = styled.div`
   width: 100%;
   order: 2;
   display: flex;
-  justify-content: end;
+  justify-content: center ;
   gap: 12px;
 
   @media screen and (max-width: 960px) {
     order: 1;
     justify-content: center;
     align-items: center;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
   }
 
   @media screen and (max-width: 640px) {
@@ -190,7 +190,7 @@ const Img = styled.img`
   border: 2px solid ${({ theme }) => theme.primary};
 
   @media (max-width: 960px) {
-    width: 50%;
+    width: 40%;
     max-width: 400px;
     max-height: 400px;
   }
@@ -239,7 +239,7 @@ const Header = () => {
           </LeftSection>
 
           <RightSection>
-            <Img src={profilePicture} alt='Profile Picture'></Img>
+            <Img src={profilePicture} alt="Profile Picture"></Img>
           </RightSection>
         </InnerContainer>
       </HeaderContainer>
