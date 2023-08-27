@@ -20,7 +20,7 @@ export const Bio = {
 export const skills = [
   {
     title: 'Frontend',
-    skills: [
+    techs: [
       {
         name: 'React Js',
         image:
@@ -62,7 +62,7 @@ export const skills = [
   },
   {
     title: 'Backend',
-    skills: [
+    techs: [
       {
         name: 'Node Js',
         image: 'https://nodejs.org/static/images/logo.svg',
@@ -88,7 +88,7 @@ export const skills = [
   },
   {
     title: 'Others',
-    skills: [
+    techs: [
       {
         name: 'Git',
         image:
