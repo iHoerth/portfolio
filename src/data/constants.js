@@ -10,8 +10,7 @@ export const Bio = {
   description: `
   I'm a JavaScript developer specializing in React, known for my strong problem-solving skills and passion for teaching. I thrive on understanding how things work and am always eager to take on new challenges.`,
   github: 'https://github.com/iHoerth',
-  resume_eng: `https://google.com`,
-  resume_eng2: `https://drive.google.com/file/d/1CY37wOnzhhYWbQ_OQyWMsGfAq2RbQ1Y_/view?usp=drive_link`,
+  resume_eng: `https://drive.google.com/file/d/1CY37wOnzhhYWbQ_OQyWMsGfAq2RbQ1Y_/view?usp=drive_link`,
   resume_esp: `https://drive.google.com/file/d/1e0QvstVcMW43p7YfrLEbzKqMwKHwvJju/view?usp=drive_link`,
   linkedin: 'https://www.linkedin.com/in/ignaciohoerth/',
   twitter: 'https://twitter.com/nachohoerth',

@@ -35,7 +35,6 @@ function App() {
             <Skills />
             <Education />
           </Wrapper>
-
         </Body>
       </BrowserRouter>
     </ThemeProvider>
