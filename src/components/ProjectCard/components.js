@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-const Container = styled.a`
+export const Container = styled.a`
   width: 330px;
   height: 490px;
   background-color: ${({ theme }) => theme.card};
@@ -21,19 +21,19 @@ const Container = styled.a`
   }
 `;
 
-const Title = styled.div`
+export const Title = styled.div`
   font-size: 20px;
   font-weight: 600;
   color: ${({ theme }) => theme.text_secondary};
   overflow: hidden;
-  text-overflow: elipsis;
+  text-overflow: ellipsis;
   white-space: nowrap;
   max-width: 100%;
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
 `;
 
-const Image = styled.img`
+export const Image = styled.img`
   width: 100%;
   border-radius: 4px;
   background-color: ${({ theme }) => theme.white};
@@ -41,7 +41,7 @@ const Image = styled.img`
   box-shadow: 0 0 16px 2px rgba(0, 0, 0, 0.3);
 `;
 
-const Tags = styled.div`
+export const Tags = styled.div`
   width: 100%;
   display: flex;
   flex-wrap: wrap;
@@ -50,7 +50,7 @@ const Tags = styled.div`
   justify-content: center;
 `;
 
-const Tag = styled.span`
+export const Tag = styled.span`
   font-size: 12px;
   font-weight: 400;
   color: ${({ theme }) => theme.primary};
@@ -59,17 +59,14 @@ const Tag = styled.span`
   border-radius: 10px;
 `;
 
-const Details = styled.div`
+export const Details = styled.div`
   width: 100%;
   display: flex;
   flex-direction: column;
   padding: 0px 2px;
 `;
 
-const Members = styled.div`
-`;
-
-const Date = styled.div`
+export const Date = styled.div`
   font-size: 12px;
   font-weight: 400;
   margin-left: 2px;
@@ -80,25 +77,14 @@ const Date = styled.div`
   }
 `;
 
-const Description = styled.div``;
-
-const Card = ({ project }) => {
-  return (
-    <Container>
-      <Image src={project.image} />
-      <Tags>
-        {project.tags.map((tag) => (
-          <Tag key={tag}>{tag}</Tag>
-        ))}
-      </Tags>
-      <Details>
-        <Title>{project.title}</Title>
-        <Date>{project.date}</Date>
-        <Description>{project.Description}</Description>
-      </Details>
-      <Members></Members>
-    </Container>
-  );
-};
-
-export default Card;
+export const Description = styled.div`
+  font-weight: 400;
+  color: ${({ theme }) => theme.text_secondary + 90};
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  dispaly: -webkit-box;
+  margin-top: 8px;
+  max-width: 100%;
+`;

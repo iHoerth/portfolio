@@ -13,7 +13,7 @@ import {
   GithubButton,
   Span,
   MobileDrawer,
-} from './navbarStyles';
+} from './components';
 
 const NavBar = () => {
   const [open, setOpen] = useState(false);

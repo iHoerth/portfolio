@@ -14,7 +14,7 @@ import {
   SubTitle,
   ResumeButton,
   Img,
-} from './headerStyles';
+} from './components';
 
 const Header = () => {
   return (
