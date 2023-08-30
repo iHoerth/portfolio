@@ -33,6 +33,10 @@ export const Copyright = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
+  @media (max-width: 400px) {
+    font-size: 12px;
+  }
 `;
 
 export const NavContainer = styled.div`
@@ -56,9 +60,12 @@ export const NavItems = styled.ul`
   align-items: center;
   gap: 32px;
   list-style: none;
-
   @media screen and (max-width: 768px) {
-    display: none;
+    gap: 20px;
+  }
+
+  @media screen and (max-width: 400px) {
+    gap: 16px;
   }
 `;
 
@@ -72,6 +79,15 @@ export const NavLink = styled.a`
   &:hover {
     color: ${({ theme }) => theme.primary};
   }
+
+  @media screen and (max-width: 768px) {
+    font-size: 16px;
+  }
+
+  @media screen and (max-width: 400px) {
+    font-size: 12px;
+
+  }
 `;
 
 export const ButtonContainer = styled.div`
@@ -82,10 +98,6 @@ export const ButtonContainer = styled.div`
   width: 100%;
   flex: 0.7;
   gap: 24px;
-
-  @media screen and (max-width: 640px) {
-    display: none;
-  }
 `;
 
 export const SocialMediaButton = styled.a`

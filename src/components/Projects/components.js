@@ -5,7 +5,7 @@ export const Container = styled.div`
   display: flex;
   flex-direction: column;
   position: relative;
-  z-index: 1;
+  z-index: 999;
   align-items: center;
 `;
 
@@ -49,4 +49,5 @@ export const CardContainer = styled.div`
   flex-wrap: wrap;
   gap: 12px;
   margin-bottom: 20px;
+  z-index: 999;
 `;

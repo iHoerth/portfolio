@@ -15,7 +15,7 @@ export const Container = styled.a`
   overflow: hidden;
   transition: 0.2s ease-in-out;
   gap: 14px;
-
+  z-index: 999;
   &:hover {
     transform: scale(1.015);
   }

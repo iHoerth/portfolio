@@ -23,6 +23,10 @@ const Wrapper = styled.div`
     linear-gradient(140deg, rgba(0, 70, 209, 0) 50%, rgba(0, 70, 209, 0.15) 100%);
   width: 100%;
   clip-path: polygon(0 0, 100% 0, 100% 100%, 30% 98%, 0 100%);
+  @media (max-width: 1025px) {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 30% 99.5%, 0 100%);
+
+  }
 `;
 
 function App() {
