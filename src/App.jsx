@@ -3,10 +3,10 @@ import { BrowserRouter } from 'react-router-dom';
 
 import Header from './components/Header/Header';
 import NavBar from './components/NavBar/NavBar';
-import Footer from './components/Footer/Footer';
 import Skills from './components/Skills/Skills';
-import Education from './components/Education/Education';
 import Projects from './components/Projects/Projects';
+import Contact from './components/Contact/Contact';
+import Footer from './components/Footer/Footer';
 
 import { darkTheme } from './utils/themes';
 import './App.css';
@@ -36,7 +36,6 @@ function App() {
           <Wrapper>
             <Skills />
             <Projects />
-            {/* <Education /> */}
           </Wrapper>
           <Footer />
         </Body>
