@@ -69,7 +69,8 @@ export const skills = [
       },
       {
         name: 'Express Js',
-        image: 'https://w7.pngwing.com/pngs/925/447/png-transparent-express-js-node-js-javascript-mongodb-node-js-text-trademark-logo.png',
+        image:
+          'https://w7.pngwing.com/pngs/925/447/png-transparent-express-js-node-js-javascript-mongodb-node-js-text-trademark-logo.png',
       },
       {
         name: 'Postgresql',
@@ -153,7 +154,7 @@ export const projects = [
     date: 'May 2023',
     description: `Web app que simula ser un PokeDex para buscar cualquier pokemon, sus estadisticas, tipos. Proximamente se añadiran features para armar una party de 6 pokemones y calcular debilidades. `,
     image: 'pokefinder_thumbnail.png',
-    tags: ['React Js', 'React Context', 'Material UI'],
+    tags: ['React Js', 'Redux', 'Material UI', 'Node Js', 'Express Js'],
     category: 'web app',
     github: 'https://github.com/iHoerth/PokeFinder',
     webapp: 'https://pokefinder-iota.vercel.app/',
@@ -168,6 +169,17 @@ export const projects = [
     category: 'web app',
     github: 'https://github.com/iHoerth/consumedic',
     webapp: 'https://pf-soyhenry.vercel.app/',
+  },
+  {
+    id: 2,
+    title: 'Mechanicar',
+    date: 'August 2023',
+    description: `Web app para gestionar un taller mecanico, permitiendo al administrador llevar un registrar de las visitas de cada cliente/auto, generando tickets y guardando un historial de reparaciones.`,
+    image: '',
+    tags: ['React Js', 'Postgresql', 'Node Js', 'Express Js', 'Material UI'],
+    category: 'web app',
+    github: 'https://github.com/iHoerth/mechanicar',
+    webapp: '',
   },
 ];
 
