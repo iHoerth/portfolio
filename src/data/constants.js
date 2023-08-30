@@ -14,7 +14,7 @@ export const Bio = {
   resume_esp: `https://drive.google.com/file/d/1e0QvstVcMW43p7YfrLEbzKqMwKHwvJju/view?usp=drive_link`,
   linkedin: 'https://www.linkedin.com/in/ignaciohoerth/',
   twitter: 'https://twitter.com/nachohoerth',
-  insta: 'https://www.instagram.com/nachohoerth/',
+  instagram: 'https://www.instagram.com/nachohoerth/',
 };
 
 export const skills = [

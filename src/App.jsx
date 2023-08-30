@@ -3,6 +3,7 @@ import { BrowserRouter } from 'react-router-dom';
 
 import Header from './components/Header/Header';
 import NavBar from './components/NavBar/NavBar';
+import Footer from './components/Footer/Footer';
 import Skills from './components/Skills/Skills';
 import Education from './components/Education/Education';
 import Projects from './components/Projects/Projects';
@@ -37,6 +38,7 @@ function App() {
             <Projects />
             {/* <Education /> */}
           </Wrapper>
+          <Footer />
         </Body>
       </BrowserRouter>
     </ThemeProvider>
