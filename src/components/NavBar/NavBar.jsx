@@ -13,6 +13,7 @@ import {
   GithubButton,
   Span,
   MobileDrawer,
+  MobileNavLink,
 } from './components';
 
 const NavBar = () => {
@@ -37,11 +38,11 @@ const NavBar = () => {
         </MobileIcon>
 
         <MobileDrawer anchor="right" open={open} onClose={() => setOpen(false)}>
-          <NavLink href="#about">About</NavLink>
-          <NavLink href="#skills">Skills</NavLink>
-          <NavLink href="#projects">Projects</NavLink>
-          <NavLink href="#experience">Experience</NavLink>
-          <NavLink href="#education">Education</NavLink>
+          <MobileNavLink onClick={() => setOpen(!open)} href="#about">About</MobileNavLink>
+          <MobileNavLink onClick={() => setOpen(!open)} href="#skills">Skills</MobileNavLink>
+          <MobileNavLink onClick={() => setOpen(!open)} href="#projects">Projects</MobileNavLink>
+          <MobileNavLink href="#experience">Experience</MobileNavLink>
+          <MobileNavLink href="#education">Education</MobileNavLink>
         </MobileDrawer>
 
         <ButtonContainer>

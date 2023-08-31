@@ -4,7 +4,7 @@ import { IconButton, Drawer } from '@mui/material';
 
 export const Nav = styled.div`
   background-color: ${({ theme }) => theme.card_light};
-  height: 80px;
+  height: 100px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -75,6 +75,10 @@ export const NavItems = styled.ul`
   list-style: none;
 
   @media screen and (max-width: 768px) {
+    gap: 16px;
+  }
+
+  @media screen and (max-width: 640px) {
     display: none;
   }
 `;
@@ -88,6 +92,10 @@ export const NavLink = styled.a`
   &:hover {
     color: ${({ theme }) => theme.primary};
   }
+
+  @media screen and (max-width: 768px) {
+    font-size: 14px;
+  }
 `;
 
 export const ButtonContainer = styled.div`
@@ -98,6 +106,7 @@ export const ButtonContainer = styled.div`
   height: 100%;
   margin: 0px 0px 0px 8px;
   padding: 0px 6px;
+
   @media screen and (max-width: 640px) {
     display: none;
   }
@@ -125,6 +134,12 @@ export const GithubButton = styled.a`
     transition: 0.2s;
   }
 
+  @media screen and (max-width: 768px) {
+    padding: 0px 14px;
+    width: 120px;
+    font-size: 0.8rem;
+  }
+
   @media screen and (max-width: 640px) {
     font-size: 0.8rem;
   }
@@ -138,16 +153,33 @@ export const Span = styled.div`
   color: ${({ theme }) => theme.text_primary};
 `;
 
+export const MobileNavLink = styled.a`
+  color: ${({ theme }) => theme.text_primary};
+  font-weight: 500;
+  font-size: 20px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+  &:hover {
+    color: ${({ theme }) => theme.primary};
+  }
+`;
+
 export const MobileDrawer = styled(Drawer)(({ theme }) => ({
   '& .MuiPaper-root': {
-    backgroundColor: theme.card_light,
+    backgroundColor: theme.card_translucent,
     color: theme.text_light,
-    width: '200px',
+    width: '260px',
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'center',
-    justifyContent: 'center',
-    padding: '12px 40px 24px 40px',
-    
+    justifyContent: 'start',
+    padding: '30px',
+    gap: '20px',
+  },
+  '@media (max-width: 360px)': {
+    '& .MuiPaper-root': {
+      width: '80%',
+    },
   },
 }));

@@ -5,6 +5,7 @@ export const darkTheme = {
   text_primary: '#F2F3F4',
   text_secondary: '#b1b2b3',
   card: '#171721',
+  card_translucent: '#171721f8',
   card_light: '#191924',
   button: '#854CE6',
   white: '#FFFFFF',
