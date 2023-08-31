@@ -35,9 +35,9 @@ const Header = () => {
                   strings: Bio.roles,
                   autoStart: true,
                   loop: true,
-                  pauseFor: 800,
-                  delay: 15,
-                  deleteSpeed: 15,
+                  pauseFor: 1000,
+                  delay: 20,
+                  deleteSpeed: 20,
                 }}
               />
             </Span>
