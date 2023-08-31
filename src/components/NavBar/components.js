@@ -144,7 +144,10 @@ export const MobileDrawer = styled(Drawer)(({ theme }) => ({
     color: theme.text_light,
     width: '200px',
     display: 'flex',
-    alignItems: 'center',
     flexDirection: 'column',
+    alignItems: 'center',
+    justifyContent: 'center',
+    padding: '12px 40px 24px 40px',
+    
   },
 }));

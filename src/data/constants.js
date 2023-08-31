@@ -2,9 +2,8 @@ export const Bio = {
   name: 'Ignacio Hoerth',
   roles: [
     'Fullstack Developer',
-    'Frontend Developer',
     'Backend Developer',
-    'Junior React Developer',
+    'Frontend Developer',
     'UI/UX Designer',
   ],
   description: `
