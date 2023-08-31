@@ -23,8 +23,7 @@ const Wrapper = styled.div`
   width: 100%;
   clip-path: polygon(0 0, 100% 0, 100% 100%, 30% 98%, 0 100%);
   @media (max-width: 1025px) {
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 30% 99.5%, 0 100%);
-
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 30% 99.5%, 0 100%);
   }
 `;
 
@@ -39,6 +38,7 @@ function App() {
           <Wrapper>
             <Skills />
             <Projects />
+            <Contact />
           </Wrapper>
           <Footer />
         </Body>

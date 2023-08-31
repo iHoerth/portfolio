@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled from 'styled-components';
 
 export const Container = styled.div`
   display: flex;
@@ -58,6 +58,7 @@ export const SkillCard = styled.div`
   border: 0.1px solid #854ce6;
   border-radius: 16px;
   padding: 18px 36px;
+  box-shadow: rgba(23, 92, 230, 0.15) 0px 4px 24px;
 
   @media (max-width: 768px) {
     max-width: 400px;

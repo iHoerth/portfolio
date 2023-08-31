@@ -116,6 +116,10 @@ export const TextLoop = styled.div`
     line-height: 32px;
     margin-bottom: 8px;
   }
+
+  @media screen and (max-width: 450px){
+    font-size: 20px;
+  }
 `;
 
 export const Span = styled.span`

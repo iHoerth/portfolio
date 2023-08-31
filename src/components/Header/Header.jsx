@@ -4,7 +4,6 @@ import profilePicture from '../../image/profile.png';
 
 import {
   HeaderContainer,
-  Background,
   TextLoop,
   LeftSection,
   RightSection,
@@ -19,8 +18,6 @@ import {
 const Header = () => {
   return (
     <HeaderContainer id="about">
-      {/* <Background></Background> */}
-
       <InnerContainer>
         <LeftSection>
           <Title>
