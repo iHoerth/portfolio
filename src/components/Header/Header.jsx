@@ -19,7 +19,7 @@ import {
 const Header = () => {
   return (
     <HeaderContainer id="about">
-      <Background></Background>
+      {/* <Background></Background> */}
 
       <InnerContainer>
         <LeftSection>
