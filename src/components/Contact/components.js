@@ -94,7 +94,7 @@ export const FormMessage = styled.textarea`
   flex: 2.5;
 `;
 
-export const FormButton = styled.a`
+export const FormButton = styled.button`
   flex: 1;
   display: flex;
   justify-content: center;
@@ -106,7 +106,7 @@ export const FormButton = styled.a`
   text-align: center;
   color:${({ theme }) => theme.white};
   border-radius: 10px;
-
+  border: 1px solid ${({theme}) => theme.primary};
   font-size: 20px;
   font-weight: 600;
 
