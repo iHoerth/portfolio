@@ -7,6 +7,7 @@ export const darkTheme = {
   card: '#171721',
   card_translucent: '#171721f8',
   card_light: '#191924',
+  card_light_translucent: '#191924f1',
   button: '#854CE6',
   white: '#FFFFFF',
   black: '#000000',

@@ -4,7 +4,14 @@ import { IconButton, Drawer } from '@mui/material';
 
 export const Nav = styled.div`
   background-color: ${({ theme }) => theme.card_light};
-  height: 100px;
+  ${({ scrolled, theme }) =>
+    scrolled &&
+    `
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 4px -1px, rgba(0, 0, 0, 0.14) 0px 4px 5px 0px,
+  rgba(0, 0, 0, 0.12) 0px 1px 10px 0px;
+  background-color: ${theme.card_light_translucent};
+  `}
+  height: 80px;
   display: flex;
   justify-content: center;
   align-items: center;
