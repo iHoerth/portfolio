@@ -2,8 +2,6 @@ import { useRef, useState } from 'react';
 import { Snackbar } from '@mui/material';
 import emailjs from '@emailjs/browser';
 
-import ReCAPTCHA from 'react-google-recaptcha';
-
 import {
   Container,
   Wrapper,
@@ -18,31 +16,9 @@ import {
 
 const Contact = () => {
   const [snackOpen, setSnackOpen] = useState(false);
-
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    subject: '',
-    message: '',
-  });
-
-  const [errors, setErrors] = useState({
-    name: '',
-    email: '',
-    subject: '',
-    message: '',
-  });
-
   const form = useRef();
 
-  const onChange = () => {};
-
-  const handleChange = (e) => {
-    setFormData({ ...formData, [e.target.name]: e.target.value });
-  };
-
   const handleSubmit = (e) => {
-    validateForm(formData);
     e.preventDefault();
     emailjs.sendForm('service_ri8b7ew', 'template_d8t10oe', form.current, 'tAb2j18rQ3RGup-4i').then(
       (res) => {
@@ -53,46 +29,17 @@ const Contact = () => {
     );
   };
 
-  const validateForm = () => {};
-
   return (
     <Container id="contact">
       <Wrapper>
         <Title>Contact</Title>
-        <Desc>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis sed molestiae quos
-          enim quas facere? Delectus reiciendis, eos soluta unde, nemo quod molestiae quia sed
-          commodi, officia ut amet asperiores!
-        </Desc>
+        <Desc>Feel free to get in touch with me or if there are any opportunities you'd like to discuss!</Desc>
         <Form ref={form} onSubmit={(e) => handleSubmit(e)}>
           <FormTitle>Email me &#x1F680;</FormTitle>
-          <FormInput
-            placeholder="Your Email"
-            name="email"
-            onChange={(e) => handleChange(e)}
-            value={formData.email}
-          ></FormInput>
-          <FormInput
-            placeholder="Your Name"
-            name="name"
-            onChange={(e) => handleChange(e)}
-            value={formData.name}
-          ></FormInput>
-          <FormInput
-            placeholder="Subject"
-            name="subject"
-            onChange={(e) => handleChange(e)}
-            value={formData.subject}
-          ></FormInput>
-          <FormMessage
-            placeholder="Message"
-            rows={4}
-            onChange={(e) => handleChange(e)}
-            name="message"
-          ></FormMessage>
-
-          <ReCAPTCHA sitekey="6LeJNe0nAAAAAKzn_K758aJ8SxiMaJnzYrlFnpM4" onChange={onChange} />
-
+          <FormInput placeholder="Your Email" name="email" />
+          <FormInput placeholder="Your Name" name="name" />
+          <FormInput placeholder="Subject" name="subject" />
+          <FormMessage placeholder="Message" rows={4} name="message" />
           <FormButton type="submit" value="send">
             Send
           </FormButton>
@@ -101,9 +48,11 @@ const Contact = () => {
           open={snackOpen}
           autoHideDuration={6000}
           onClose={() => setSnackOpen(false)}
-          message="Email sent successfully!"
           severity="success"
-        />
+          sx={{ backgroundColor: '#4caf50' }}
+        >
+          <div style={{ backgroundColor: '#4caf50' }}>Mail enviado</div>
+        </Snackbar>
       </Wrapper>
     </Container>
   );
