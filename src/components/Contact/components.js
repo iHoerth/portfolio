@@ -6,10 +6,10 @@ export const Container = styled.div`
   flex-direction: column;
   position: relative;
   align-items: center;
+  margin-top: 60px;
 `;
 
 export const Wrapper = styled.div`
-  max-width: 1100px;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -17,6 +17,7 @@ export const Wrapper = styled.div`
   align-items: center;
   width: 100%;
   gap: 20px;
+  padding: 0px 12px;
 `;
 
 export const Title = styled.div`
@@ -52,6 +53,14 @@ export const Form = styled.form`
   box-shadow: rgba(23, 92, 230, 0.15) 0px 4px 24px;
   width: 600px;
   height: 500px;
+
+  @media (max-width: 640px) {
+    width: 480px;
+  }
+
+  @media (max-width: 480px) {
+    width: 99%;
+  }
 `;
 
 export const FormTitle = styled.div`

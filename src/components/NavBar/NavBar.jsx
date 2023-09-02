@@ -61,7 +61,9 @@ const NavBar = () => {
           <MobileNavLink onClick={() => setOpen(!open)} href="#projects">
             Projects
           </MobileNavLink>
-          <MobileNavLink href="#contact">Contact</MobileNavLink>
+          <MobileNavLink onClick={() => setOpen(!open)} href="#contact">
+            Contact
+          </MobileNavLink>
         </MobileDrawer>
 
         <ButtonContainer>
